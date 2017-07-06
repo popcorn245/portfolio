@@ -8,3 +8,15 @@ h1 {
     font-weight: normal;
     margin: 0 20% 0 20%;
 }
+
+.blue-title {
+    color: blue;
+}
+
+#sub-title {
+    color: white;
+}
+
+.underline {
+    text-decoration: underline;
+}
