@@ -1,5 +1,6 @@
 body {
     background-color: lightblue;
+    transition: all ease 1s;
 }
 
 h1 {

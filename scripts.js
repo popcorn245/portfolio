@@ -2,6 +2,11 @@ $(document).ready(function() {
     
     $('#contactForm').on('submit', submitContactForm);
 
+    var colors = ['red', 'blue', 'green'];
+    setInterval(function() {
+        var currentColor = colors[Math.floor(Math.random() * 2)];  
+        $('body').css('background-color', currentColor);
+    }, 1000);
 });
 
 
