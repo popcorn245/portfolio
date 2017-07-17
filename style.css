@@ -20,3 +20,29 @@ h1 {
 .underline {
     text-decoration: underline;
 }
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#success {
+    background: white;
+    width: 90%;
+    max-width: 420px;
+    margin: 15px auto;
+    padding: 30px;
+    display: none;
+}
+
+#success i {
+    font-size: 100px;
+    text-align: center;
+    color: green;
+    width: 100%;
+}
+
+#success h2 {
+    color: #333;
+}

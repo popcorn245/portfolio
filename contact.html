@@ -34,13 +34,13 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active">
+                    <li>
                         <a href="index.html">Home</a>
                     </li>
                     <li>
                         <a href="projects.html">Projects</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
@@ -50,34 +50,24 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <img src="images/me.png" alt="">
-    <h2>I do a lot of cool websites</h2>
-    <a href="projects.html" class="btn btn-success btn-block btn-lg">View My Projects</a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo labore quasi repellat corporis magni, vel esse
-        quo earum minima quas ullam sed accusantium nulla nobis officia, voluptas iure. Maxime.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo labore quasi repellat corporis magni, vel esse
-        quo earum minima quas ullam sed accusantium nulla nobis officia, voluptas iure. Maxime.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo labore quasi repellat corporis magni, vel esse
-        quo earum minima quas ullam sed accusantium nulla nobis officia, voluptas iure. Maxime.</p>
-    <p>
-        This is a
-        <b>lump</b> of text
-    </p>
-    <div>asdfasdfasd</div>
-    <ul>
-        <li>Test</li>
-        <li>Test 2</li>
-        <li>Test 3</li>
-    </ul>
-    <hr />
-    <ol>
-        <li>Milk</li>
-        <li>Eggs</li>
-        <li>Cheese</li>
-    </ol>
-    <h1 class="blue-title underline">A New Title</h1>
-    <h2 id="sub-title">This has an ID</h2>
+    <form id="contactForm" name="contactForm">
+        <div class="form-group">
+            <input class="form-control" type="email" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+        </div>
+        <input class="btn btn-primary btn-block" type="submit" value="submit">
+    </form>
+
+    <div id="success">
+        <i class="glyphicon glyphicon-thumbs-up"></i>
+        <h2>Thanks for Contacting Me!</h2>
+        <p>Thanks for contacting me I will be back to you within 24-48 hours.</p>
+    </div>
 
 </body>
-
 </html>
