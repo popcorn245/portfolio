@@ -1,12 +1,27 @@
 $(document).ready(function() {
     
     $('#contactForm').on('submit', submitContactForm);
+    $("#profile-picture").on('click', function() {
+        var profilePic = $(this)
+        profilePic.attr('src', 'images/explosion.gif');
+        setTimeout(function() {
+            profilePic.attr('src', 'images/me.png');
+        }, 2000);
+    });
 
-    var colors = ['red', 'blue', 'green'];
+    var backgroundImages = [
+        '1.jpg',
+        '2.jpg',
+        '3.jpg'
+    ];
+    var i = 0;
     setInterval(function() {
-        var currentColor = colors[Math.floor(Math.random() * 2)];  
-        $('body').css('background-color', currentColor);
-    }, 1000);
+        $("body").css('background-image', 'url("images/backgrounds/' + backgroundImages[i] + '")');
+        i = i + 1;
+        if (i == 3) {
+            i = 0;
+        }
+    }, 2000);
 });
 
 
