@@ -1,5 +1,22 @@
+var projects = [
+    {
+        "name": "Claim Academy",
+        "image": "images/claim-academy.jpg",
+        "link": "http://claimacademystl.com/"
+    }, {
+        "name": "DexSphere"
+    }
+];
+
+
 $(document).ready(function() {
     
+    $.each(projects, function(index, project) {
+        console.log(project);
+        $('#projects').append('<a href="' + project.link + '" target="_blank"><img src="' + project.image + '" />' + project.name + '</a>');
+    });
+
+
     $('#contactForm').on('submit', submitContactForm);
     $("#profile-picture").on('click', function() {
         var profilePic = $(this)
