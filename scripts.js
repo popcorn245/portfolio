@@ -13,7 +13,7 @@ $(document).ready(function() {
     
     $.each(projects, function(index, project) {
         console.log(project);
-        $('#projects').append('<a href="' + project.link + '" target="_blank"><img src="' + project.image + '" />' + project.name + '</a>');
+        $('#projects').append('<a href="' + project.link + '" target="_blank"><img class="animated pulse infinite" src="' + project.image + '" />' + project.name + '</a>');
     });
 
 
