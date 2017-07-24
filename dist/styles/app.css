@@ -29,7 +29,8 @@
 body {
   background-color: lightblue;
   transition: all ease 1s;
-  color: white; }
+  color: white;
+  background-image: url("../../images/explosion.gif"); }
 
 h1 {
   text-align: center;
