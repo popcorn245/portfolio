@@ -1,8 +1,6 @@
-$theme-primary: #CCC;
+@import 'variables';
 
-@import 'success';
-@import 'projects';
-
+// GLOBALS
 body {
     background-color: lightblue;
     transition: all ease 1s;
